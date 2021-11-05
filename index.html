@@ -1,7 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
   <head>
-    <title>Hello, world!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NekoDev</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #36393f;
+        --background: var(--white);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: var(--black);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        height: 100%;
+      }
+
+      body {
+        background: var(--background);
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+      }
+    </style>
   </head>
-  <body>🐈</body>
+  <body>
+    <div class="container">🐱‍💻</div>
+  </body>
 </html>
